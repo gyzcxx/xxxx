@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a5f7a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0d2833;stop-opacity:1" />
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <rect width="100%" height="100%" fill="url(#bgGrad)"/>
+  <!-- 建筑剪影 -->
+  <polygon points="100,800 200,500 300,600 400,400 500,700 600,450 700,650 800,350 900,550 1000,400 1100,600 1200,380 1300,580 1400,420 1500,620 1600,400 1700,550 1800,450 1820,800" fill="#0d2833" opacity="0.8"/>
+  <!-- 数据流线条 -->
+  <g opacity="0.6">
+    <path d="M50,200 Q200,100 400,250 T800,200" stroke="#00d4ff" stroke-width="2" fill="none" filter="url(#glow)"/>
+    <path d="M100,400 Q300,300 500,450 T900,400" stroke="#00d4ff" stroke-width="1.5" fill="none" filter="url(#glow)"/>
+    <path d="M50,600 Q250,500 450,650 T850,600" stroke="#00d4ff" stroke-width="1" fill="none" filter="url(#glow)"/>
+  </g>
+  <!-- 粒子效果 -->
+  <g>
+    <circle cx="150" cy="150" r="2" fill="#00d4ff" opacity="0.8"/>
+    <circle cx="350" cy="250" r="1.5" fill="#c9a227" opacity="0.7"/>
+    <circle cx="550" cy="180" r="2" fill="#00d4ff" opacity="0.6"/>
+    <circle cx="750" cy="300" r="1.5" fill="#c9a227" opacity="0.8"/>
+    <circle cx="950" cy="220" r="2" fill="#00d4ff" opacity="0.7"/>
+    <circle cx="1150" cy="350" r="1.5" fill="#c9a227" opacity="0.6"/>
+    <circle cx="1350" cy="180" r="2" fill="#00d4ff" opacity="0.8"/>
+    <circle cx="1550" cy="280" r="1.5" fill="#c9a227" opacity="0.7"/>
+    <circle cx="1750" cy="200" r="2" fill="#00d4ff" opacity="0.6"/>
+  </g>
+  <!-- 帆船抽象 -->
+  <g transform="translate(1200, 600)" opacity="0.7">
+    <path d="M0,50 L40,0 L80,50 Z" fill="#c9a227"/>
+    <rect x="38" y="50" width="4" height="30" fill="#8b6914"/>
+    <path d="M10,80 Q40,90 70,80" stroke="#8b6914" stroke-width="3" fill="none"/>
+  </g>
+</svg>

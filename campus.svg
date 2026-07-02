@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <defs>
+    <linearGradient id="campusGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#f7b733;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#fc4a1a;stop-opacity:0.3" />
+    </linearGradient>
+  </defs>
+  <!-- 天空背景 -->
+  <rect width="100%" height="100%" fill="url(#campusGrad)"/>
+  <!-- 现代建筑 -->
+  <rect x="100" y="250" width="200" height="300" fill="#1a5f7a" rx="5"/>
+  <rect x="350" y="200" width="250" height="350" fill="#2d809e" rx="5"/>
+  <rect x="650" y="280" width="120" height="270" fill="#1a5f7a" rx="5"/>
+  <!-- 窗户 -->
+  <g fill="#00d4ff" opacity="0.6">
+    <rect x="120" y="280" width="30" height="40" rx="2"/>
+    <rect x="170" y="280" width="30" height="40" rx="2"/>
+    <rect x="220" y="280" width="30" height="40" rx="2"/>
+    <rect x="120" y="350" width="30" height="40" rx="2"/>
+    <rect x="170" y="350" width="30" height="40" rx="2"/>
+    <rect x="220" y="350" width="30" height="40" rx="2"/>
+    <rect x="120" y="420" width="30" height="40" rx="2"/>
+    <rect x="170" y="420" width="30" height="40" rx="2"/>
+    <rect x="220" y="420" width="30" height="40" rx="2"/>
+  </g>
+  <!-- 传统飞檐 -->
+  <path d="M400,180 L420,150 L450,180 L450,200 L400,200 Z" fill="#c9a227"/>
+  <path d="M480,180 L500,150 L530,180 L530,200 L480,200 Z" fill="#c9a227"/>
+  <!-- 文字 -->
+  <text x="400" y="100" text-anchor="middle" font-family="Noto Serif SC, serif" font-size="36" fill="#1a5f7a" font-weight="bold">校园建筑</text>
+</svg>
